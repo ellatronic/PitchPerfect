@@ -14,6 +14,8 @@
 		4983C9901D8336DD0045AE9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4983C98E1D8336DD0045AE9E /* LaunchScreen.storyboard */; };
 		4983C99B1D8336DD0045AE9E /* PitchPerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983C99A1D8336DD0045AE9E /* PitchPerfectTests.swift */; };
 		4983C9A61D8336DD0045AE9E /* PitchPerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983C9A51D8336DD0045AE9E /* PitchPerfectUITests.swift */; };
+		49FA7D951DA45ED200B55177 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA7D941DA45ED200B55177 /* PlaySoundsViewController.swift */; };
+		49FA7D971DA46B1600B55177 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA7D961DA46B1600B55177 /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4983C9A11D8336DD0045AE9E /* PitchPerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchPerfectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4983C9A51D8336DD0045AE9E /* PitchPerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPerfectUITests.swift; sourceTree = "<group>"; };
 		4983C9A71D8336DD0045AE9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49FA7D941DA45ED200B55177 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		49FA7D961DA46B1600B55177 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				4983C9851D8336DD0045AE9E /* AppDelegate.swift */,
 				4983C9871D8336DD0045AE9E /* RecordSoundsViewController.swift */,
+				49FA7D941DA45ED200B55177 /* PlaySoundsViewController.swift */,
+				49FA7D961DA46B1600B55177 /* PlaySoundsViewController+Audio.swift */,
 				4983C9891D8336DD0045AE9E /* Main.storyboard */,
 				4983C98C1D8336DD0045AE9E /* Assets.xcassets */,
 				4983C98E1D8336DD0045AE9E /* LaunchScreen.storyboard */,
@@ -263,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4983C9881D8336DD0045AE9E /* RecordSoundsViewController.swift in Sources */,
+				49FA7D971DA46B1600B55177 /* PlaySoundsViewController+Audio.swift in Sources */,
+				49FA7D951DA45ED200B55177 /* PlaySoundsViewController.swift in Sources */,
 				4983C9861D8336DD0045AE9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
