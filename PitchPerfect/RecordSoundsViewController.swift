@@ -64,20 +64,24 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func audioRecorderDidFinishRecording(_ reorder: AVAudioRecorder, successfully flag: Bool) {
-        print("AVAudioRecorder is finished.")
+        print("AVAudioRecorder finished saving recording.")
         if (flag) {
+//            recordAudio = RecordedAudio()
+//            recordAudio.title = recorder.url.lastPathComponent
             self.performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
             //self.performSegueWithIdentifer("stopRecording", sender: audioRecorder.url)
         } else {
             print("Saving of recording failed")
+//            recordButton.enable = true
+//            stopButton.hidden = true
         }
     }
     
-    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "stopRecording") {
             let playSoundsVC = segue.destination as! PlaySoundsViewController
             let recordedAudioURL = sender as! NSURL
-            playSoundsVC.recordedAudioURL = recordedAudioURL
+            playSoundsVC.recordedAudioURL = recordedAudioURL as NSURL!
         }
     }
 }
